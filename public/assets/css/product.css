@@ -1,0 +1,135 @@
+.container {
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    color: #000 !important;
+}
+
+.container .product {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.45);
+    margin: 20px;
+    padding: 15px;
+}
+
+.container .product img {
+    position: relative;
+    padding: 10px;
+    top: -5px;
+    left: -15px;
+    transition: all 0.2s ease;
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 70%);
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 70%);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    max-width: 180px;
+}
+
+.container .product img:hover {
+    padding: 10px;
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+    transform: scale(1.1);
+}
+
+.container .product h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.container .product .description {
+    text-align: left;
+    font-size: 11px;
+    color: #fff;
+}
+
+.container .product .info {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.container .product .price {
+    float: right;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 6px;
+}
+.container .product .rating {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.container .product .btn {
+    position: absolute;
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+    border: 2px solid #00fefe;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+    color: #00fefe;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.container .product .btn.ok {
+    background-color: rgba(0, 254, 254, 0.4);
+    color: #fff;
+}
+
+.container .product .btn.ok:after {
+    content: "";
+    color: #fff;
+}
+
+.container .product .btn:hover {
+    padding-right: 25px;
+}
+
+.container .product .btn:hover:after {
+    margin-left: 5px;
+}
+
+.container .product .btn:after {
+    font-family: "simple-line-icons";
+    content: "";
+    transition: all 0.2s ease;
+    position: absolute;
+    color: #00fefe;
+    margin-left: 30px;
+    transition: all 0.2s ease;
+}
+
+.container .product .quickview {
+    position: absolute;
+    bottom: 20px;
+    font-size: 11px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .product .quickview:before {
+    font-family: "simple-line-icons";
+    content: "";
+    margin-right: 3px;
+}
+
+.category {
+    color: #000;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+}
